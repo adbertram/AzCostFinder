@@ -1,4 +1,4 @@
-function Remove-AzCostFinderServicePrincipal {
+function Remove-AzCostFinderCredential {
     [OutputType('null')]
     [CmdletBinding()]
     param
