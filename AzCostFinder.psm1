@@ -2,7 +2,7 @@ Set-StrictMode -Version Latest
 
 ## These script vars are used to create a service principal and role custom-built to only require needed privileges
 $script:AzCustomRoleName = 'AzCostFinder PowerShell Module Cost Viewer'
-$script:azureAdAppName = 'AzCostFinder'
+$script:projectName = 'AzCostFinder'
 
 # Get public and private function definition files.
 $Public = @(Get-ChildItem -Path $PSScriptRoot\public\*.ps1 -ErrorAction SilentlyContinue)

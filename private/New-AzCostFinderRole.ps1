@@ -1,6 +1,5 @@
 function New-AzCostFinderRole {
-    [OutputType('type')]
-    [CmdletBinding(SupportsShouldProcess)]
+    [CmdletBinding()]
     param
     (
         [Parameter(Mandatory)]
@@ -23,5 +22,5 @@ function New-AzCostFinderRole {
     $role.AssignableScopes.Clear()
     $role.AssignableScopes.Add("/subscriptions/$SubscriptionId")
 
-    $null = New-AzRoleDefinition -Role $role
+    New-AzRoleDefinition -Role $role
 }
